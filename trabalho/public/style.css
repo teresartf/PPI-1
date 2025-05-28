@@ -1,0 +1,119 @@
+/* Estilo Sanrio Y2K */
+
+body {
+  background-image: url('https://i.imgur.com/z0MtxGt.gif'); /* Fundo arco-íris com estrelas */
+  background-color: #ffe6f0;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
+  color: #d63384;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #ff66cc;
+  text-shadow: 1px 1px 2px #ffffff, 0 0 10px #ffccff;
+  font-family: 'Lucida Handwriting', cursive;
+  margin: 20px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+  padding: 30px;
+  border: 6px double #ffb6c1;
+  border-radius: 25px;
+  background: url('https://i.imgur.com/Rd3jBKH.gif'); /* fundo com glitter */
+  background-repeat: repeat;
+  box-shadow: 0 0 20px #ff99cc;
+}
+
+input[type="text"] {
+  width: 65%;
+  padding: 12px;
+  font-size: 18px;
+  border: 3px dotted #ff99cc;
+  border-radius: 12px;
+  background-color: #fff0f5;
+  color: #d63384;
+  box-shadow: 0 0 8px #ffc0cb inset;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  margin-left: 10px;
+  background: linear-gradient(to bottom, #ffd6ec, #ffa7d1);
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #ff66cc;
+  border-radius: 20px;
+  cursor: pointer;
+  text-shadow: 1px 1px #cc0066;
+  box-shadow: 0 0 10px #ff66cc;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #ffc0cb, #ff69b4);
+  box-shadow: 0 0 15px #ff66cc;
+}
+
+.results {
+  margin-top: 30px;
+  background-color: #fff0f5;
+  border: 4px dashed #ff99cc;
+  padding: 25px;
+  border-radius: 20px;
+  color: #cc0066;
+  box-shadow: 0 0 12px #ffb6c1;
+  text-align: left;
+}
+
+a {
+  color: #ff3399;
+  font-weight: bold;
+  text-decoration: underline dotted;
+}
+
+a:hover {
+  color: #d63384;
+  text-shadow: 0 0 6px #ff99cc;
+}
+
+.footer {
+  margin: 30px 0;
+  font-size: 14px;
+  color: #ff66cc;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+/* Gifs decorativos */
+.ribbon {
+  background: url('https://i.imgur.com/3oRGEhD.gif') no-repeat;
+  background-size: contain;
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.hello-kitty {
+  background: url('https://i.imgur.com/jHdWlER.gif') no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.blink {
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
