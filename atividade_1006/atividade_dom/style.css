@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap');
+
+body {
+    background: #fff0f6;
+    font-family: 'Poppins', sans-serif;
+    color: #a83279;
+    font-size: 16px;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+    color: #e75480;
+    text-align: center;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+/* Adiciona pequenos corações rosas nos títulos */
+h1::after, h2::after {
+    content: " ⋆. 𐙚 ˚";
+    font-size: 1.2em;
+    position: relative;
+    top: 2px;
+}
+
+/* Título principal com efeitos delicados */
+#titulo {
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 4px #f9cde9;
+    margin-bottom: 1em;
+}
+
+/* Botões arredondados com fundo rosa suave e sombras */
+button {
+    background-color: #f8bbd0;
+    border: 2px solid #f06292;
+    border-radius: 25px;
+    color: #880e4f;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px 18px;
+    margin: 6px 4px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 2px 6px #f9cde9;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #f48fb1;
+    box-shadow: 3px 3px 10px #ec407a;
+    color: white;
+}
+
+/* Listas com bolinhas rosa e laços antes dos itens */
+ul {
+    list-style-type: none;
+    padding-left: 1.2em;
+    max-width: 320px;
+    margin: 0 auto 2em auto;
+}
+
+ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0.7em;
+    font-weight: 500;
+    color: #ad1457;
+    font-size: 1.1em;
+}
+
+/* Ícone de laço antes do item da lista */
+ul li::before {
+    content: "🎀";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+}
+
+/* Passos do preparo com bordas arredondadas e fundo suave */
+.passo {
+    background-color: #fce4ec;
+    border: 1.5px solid #f8bbd0;
+    border-radius: 15px;
+    padding: 12px 18px;
+    margin: 8px auto;
+    max-width: 640px;
+    box-shadow: 2px 2px 6px #f8bbd0;
+    color: #880e4f;
+}
+
+/* Linha horizontal delicada */
+hr {
+    border: none;
+    border-top: 1px solid #f8bbd0;
+    margin: 2em 0;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Parágrafo destaque com fundo rosa claro e coração */
+#destaque {
+    background-color: #f8bbd0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 600px;
+    margin: 1em auto 2em auto;
+    color: #6a1b4d;
+    position: relative;
+}
+
+#destaque::before  {
+    content: "𖹭 ";
+}
+
+#destaque::after {
+    content: "𖹭 ";
+}
+
+/* Inputs com bordas arredondadas e rosa */
+input[type="text"],
+input[type="number"],
+select {
+    border: 2px solid #f48fb1;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 1em;
+    margin: 8px 6px 15px 0;
+    max-width: 250px;
+    font-family: 'Poppins', sans-serif;
+    color: #880e4f;
+    outline-color: #f06292;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    box-shadow: 0 0 8px 2px #f48fb1;
+}
+
+/* Labels dos radio com coração rosa */
+label {
+    font-weight: 600;
+    color: #ad1457;
+    margin-right: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+label input[type="radio"] {
+    accent-color: #f48fb1;
+}
+
+/* Resultado da calculadora em rosa escuro */
+#resultadoCalculo {
+    margin-top: 12px;
+    font-weight: 700;
+    color: #880e4f;
+    font-size: 1.2em;
+}
+
+/* Lista de ingredientes personalizada */
+#listaIngredientes {
+    max-width: 320px;
+    margin: 0 auto 2em auto;
+    color: #ad1457;
+    font-weight: 600;
+}
+
+/* Select com sombra e rosa */
+#selectIngredientes {
+    box-shadow: 0 0 8px 1px #f48fb1;
+}
+
+/* Scroll suave para o corpo */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Pequeno toque fofo no cursor */
+body, button {
+    cursor: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3e%3ctext y='20' font-size='20'%3e🍓%3c/text%3e%3c/svg%3e") 12 12, auto;
+}
+
+/* Container geral centralizado */
+.container {
+    max-width: 700px;       /* limita a largura máxima */
+    margin: 0 auto;         /* centraliza horizontalmente */
+    padding: 20px;
+    box-sizing: border-box; /* inclui padding na largura */
+    background-color: #fff0f6; /* só pra destacar o fundo */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(232, 84, 128, 0.2);
+}
+  
+/* Também centraliza textos dentro */
+.container, 
+.container h1, 
+.container h2, 
+.container p, 
+.container ul, 
+.container .passo {
+    text-align: center;
+}
+  
+/* modo escuro ativado */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+}
+  
+body.dark-mode .container {
+    background-color: #2a2a2a;
+    color: #f2f2f2;
+}
